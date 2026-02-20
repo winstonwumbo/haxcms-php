@@ -253,7 +253,11 @@ class HAXCMS
                 }
                 $themeSelect = array();
                 // ensure field schema has correct theme options
+                // filter hidden / terrible themes from the site settings dialog
                 foreach ($this->config->themes as $name => $data) {
+                  if ((isset($data->hidden) && $data->hidden) || (isset($data->terrible) && $data->terrible)) {
+                    continue;
+                  }
                   $themeSelect[$name] = $data->name;
                 }
                 // @todo this is VERY hacky specific placement of the theme options
