@@ -62,10 +62,6 @@ $appSettings = $HAXCMS->appJWTConnectionSettings('');
         padding: 0;
         font-family: 'Press Start 2P', sans-serif;
         overflow-x: hidden;
-        background-image: url('<?php print $HAXCMS->basePath;?>build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/LMBackgroundImage.svg');
-        background-repeat: repeat;
-        background-position: center center;
-        background-size: auto, 20% auto, 20% auto;
         --app-hax-accent-color: black;
         --app-hax-background-color: white;
         --simple-tooltip-background: #000000;
@@ -79,24 +75,14 @@ $appSettings = $HAXCMS->appJWTConnectionSettings('');
       }
       body.dark-mode {
         background-color: black;
-        background-image: url('<?php print $HAXCMS->basePath;?>build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/DMBackgroundImage.svg');
         --app-hax-accent-color: white;
         --app-hax-background-color: black;
-      }
-      body.app-loaded:not(.bad-device) {
-        background-image: url('<?php print $HAXCMS->basePath;?>build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/LMBackgroundImage.svg'), url('<?php print $HAXCMS->basePath;?>build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/DesignLightModeLeft.svg'), url('<?php print $HAXCMS->basePath;?>build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/DesignLightModeRight.svg');
-        background-position: top;
-        background-size: auto;
-        
       }
       div[slot="externalproviders"] {
         display: none;
       }
       body.app-loaded div[slot="externalproviders"] {
         display: unset;
-      }
-      body.app-loaded.dark-mode {
-        background-image: url('<?php print $HAXCMS->basePath;?>build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/DMBackgroundImage.svg'), url('<?php print $HAXCMS->basePath;?>build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/DesignDarkModeLeft.svg'), url('<?php print $HAXCMS->basePath;?>build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/DesignDarkModeRight.svg');
       }
       #loading {
         font-family: 'Press Start 2P', sans-serif;

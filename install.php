@@ -23,10 +23,6 @@ if (is_dir('_sites') && is_dir('_config') && is_dir('_published') && is_dir('_ar
         margin: 0;
         padding: 0;
         overflow-x: hidden;
-        background-image: url('/build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/LMGridBox.svg');
-        background-repeat: repeat;
-        background-position: center center;
-        background-size: auto, 20% auto, 20% auto;
         --app-hax-accent-color: black;
         --app-hax-background-color: white;
         --simple-tooltip-background: #000000;
@@ -37,12 +33,6 @@ if (is_dir('_sites') && is_dir('_config') && is_dir('_published') && is_dir('_ar
         --simple-tooltip-duration-out: 0;
         --simple-tooltip-border-radius: 0;
         --simple-tooltip-font-size: 14px;
-      }
-      body {
-        background-image: url('/build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/LMGridBox.svg'), url('build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/DesignLightModeLeft.svg'), url('build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/DesignLightModeRight.svg');
-        background-repeat: repeat, repeat-y, repeat-y;
-        background-position: center center, top left, top right;
-        background-size: auto, 20% auto, 20% auto;
       }
       pre {
         background-color: #333333;
